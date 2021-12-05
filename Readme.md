@@ -13,7 +13,7 @@ get up and running for the MSR Mining Challenge 2021 ((see)[https://conf.researc
 To run the dataset images you should first build the docker images (This does not yet download the dataset).
 After building you should run the docker images using the following command:
 
-`docker run -it --rm -p 27017:27017 -v $PWD:/data:/data/db <TAG_NAME>`
+`docker run -it --rm -p 27017:27017 -v $PWD/data:/data/db <TAG_NAME>`
 
 This command mounts the data directory of the mongoDB image outside the container itself, such that the
 dataset is preserved after you kill the container. While running this container for the first time 
