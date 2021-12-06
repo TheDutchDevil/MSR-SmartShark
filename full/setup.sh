@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget --continue --progress=do:mega --tries=0 -O /tmp/shark.agz https://data.goettingen-research-online.de/api/access/datafile/:persistentId?persistentId=doi:10.25625/7OZ1SP/CUOQ6K
+wget --continue --progress=do:giga --tries=0 -O /tmp/shark.agz http://141.5.100.155/smartshark_2_1.agz
 
 mongorestore --gzip --archive=/tmp/shark.agz
 
