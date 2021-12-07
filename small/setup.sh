@@ -4,6 +4,6 @@ wget -O /data/db/shark.agz https://data.goettingen-research-online.de/api/access
 
 mongorestore --gzip --archive=/data/db/shark.agz
 
-echo "Restored smartshark DB"
+echo "Restored smartshark small DB"
 
 rm /data/db/shark.agz
