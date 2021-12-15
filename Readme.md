@@ -34,7 +34,13 @@ analysis folder by cd'ing to the analysis folder and using the command:
 
 After the image has been built you can then run a container using the command:
 
-`docker run -it --rm -p 8888:8888 -v $PWD/notebooks:/home/jovyan/work <TAG_NAME>`
+`docker run -it --rm -p 8888:8888 -v $PWD/notebooks:/home/work <TAG_NAME>`
+
+The docker build command itself can take quite a long time to complete, as this Dockerfile builds a 
+jupyter instance in which both R and Python are available. If you do not want to wait as long 
+you can consider using the prebuilt image by running:
+
+`docker run -it --rm -p 8888:8888 -v $PWD/notebooks:/home/work nathancassee/tue:jupyter-2`
 
 In your terminal you can see the url that you need to connect to jupyter notebook instance.
 
